@@ -1,0 +1,218 @@
+:root {
+
+    --text-color-primary:#212121;
+    --text-color-secondary:#757575;
+    --text-color-accent: #2196F3;
+    --font-primary: Roboto;
+    --font-secondary: Raleway;
+}
+body {
+    font-family:var(--font-primary);
+    color:var(--text-color-primary);
+    
+} 
+p {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+  }
+ul, ol {
+    list-style: none;
+   }
+.logo {
+    color: #000000;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+}
+.web {
+    color: var(--text-color-accent);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.studio { 
+    color:  #000000;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+}
+.studio:focus,
+.studio:hover {
+    color: var(--text-color-accent);
+}
+.logo:hover,
+.logo:focus {
+    color: var(--text-color-accent);
+}
+.nav-link { 
+    color: var(--text-color-primary);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.nav-link:hover,
+.nav-link:focus  {
+    color: var(--text-color-accent);
+}
+.kontacts
+ {
+    color: var(--text-color-secondary);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.kontacts:hover,
+.kontacts:focus {
+    color: var(--text-color-accent);
+}
+.hero {
+    background-color: #2F303A;
+    text-align: center;
+}
+.hero-idea {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+
+}
+.service {
+    color: #FFFFFF;
+    background-color: var(--text-color-accent);
+    cursor: pointer;
+}
+.service:hover,
+.service:focus {
+    color: var(--text-color-accent);
+    background-color: #FFFFFF;
+}
+
+h1 {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+.hidd {
+     visibility: hidden; 
+}
+h2 {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+}
+.feature-idea {
+    color: var(--text-color-primary);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.feature {
+    color: var(--text-color-secondary);
+    font-size: 14px;
+    line-height: 1.71;
+    text-transform: uppercase;
+
+} 
+.team-names {  
+    color: var(--text-color-primary);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+.team-job { 
+    color: var(--text-color-secondary);
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+.care {
+    color: var(--text-color-primary);
+    background-color: #F5F4FA;
+    cursor: pointer;
+}
+.care:hover,
+.care:focus {
+    color: #FFFFFF;
+    background-color: var(--text-color-accent);
+}
+/*
+.products-name {
+    color: #212121;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}*/
+.products-trait {
+    color: var(--text-color-secondary);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+.footer {
+    background-color: #2F303A;
+}
+.footer-logo {
+    font-family: Raleway, sans-serif;
+    color:  #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+}
+.wb {
+    color: var(--text-color-accent);
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+}
+.footer-logo:hover,
+.footer-logo:focus 
+{
+   color: var(--text-color-accent); 
+}
+.address {
+    color: #FFFFFF;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.contacts {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+.address:hover,
+.address:focus   {
+   color: var(--text-color-accent);
+}
+.contacts:hover,
+.contacts:focus {
+   color: var(--text-color-accent);
+}
