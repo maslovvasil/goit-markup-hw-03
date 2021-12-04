@@ -297,8 +297,9 @@ letter-spacing: 0.03em;
     
 }
 .product-link {
-
-   padding-left: 24;
+   width: 322px;
+   height: 79px;
+   
    margin-top: 20px;
 }
 .product-item:nth-child(3n) {
@@ -311,6 +312,10 @@ letter-spacing: 0.03em;
     width: 370px;
 }
 .product-name {
+    width: 322px;
+    height: 36px;
+    margin-top: 20px;
+    margin-left: 24px;
     color: #212121;
     font-weight: 700;
     font-size: 18px;
@@ -319,6 +324,7 @@ letter-spacing: 0.03em;
 }
 .product-trait {
     padding-top: 4px;
+    margin-left: 24px;
     color: var(--text-color-secondary);
     font-size: 16px;
     line-height: 1.88;
