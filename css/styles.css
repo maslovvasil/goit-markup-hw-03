@@ -95,6 +95,12 @@ h1, h2, h3, h4, p, li {
 .link:focus  {
     color: var(--text-color-accent);
 }
+.nav-site .link .current {
+    color: var(--text-color-accent);
+}
+.link.current::after {
+    content: var(--text-color-accent);
+}
 .nav-auth {
     display: flex;
     margin-left: auto;
