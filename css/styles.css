@@ -16,23 +16,30 @@ a {
     cursor: pointer;
   }
 ul {
+    margin: 0;
     list-style: none;
     padding-inline-start: 0;
 }
-.h1, h2, h3, p, li {
+h1, h2, h3, h4, p, li {
     margin: 0;
 }
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 .container { 
-    
-    align-items: center;
-    display: flex;
     width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
     
 }
-.logo {
+.header-container {
+    align-items: center;
+    display: flex;
+   
+}
+.logo-head { 
+    margin-right: 93px;
     color: #000000;
     font-weight: 700;
     font-size: 26px;
@@ -67,12 +74,16 @@ ul {
 }
 .nav-site {
     display: flex;
-    margin-left: 93px;
+    
+}
+.nav-site .item {
+    margin-right: 50px;
 }
 .nav-site .link { 
     color: var(--text-color-primary);
     display: block;
-    margin-right: 50px;
+    padding: 32px 0;
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -86,13 +97,14 @@ ul {
 }
 .nav-auth {
     display: flex;
-    margin: auto;
+    margin-left: auto;
 }
-
+.nav-auth-kont {
+    margin-right: 50px;
+}
 .kontacts {  
     color: var(--text-color-secondary);
 
-    margin-right: 50px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -104,24 +116,29 @@ ul {
 .kontacts:focus {
     color: var(--text-color-accent);
 }
-.hero {
+.hero { 
+    padding: 200px 0;
     background-color: #2F303A;
     text-align: center;
 }
-.hero-idea {
+.hero-idea { 
     color: #FFFFFF;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
-    padding-top: 200px;
 
 }
-.service {
+.service { 
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 4px;
+    border: transparent;
+
     color: #FFFFFF;
     background-color: var(--text-color-accent);
     cursor: pointer;
-    margin-bottom: 200px;
 }
 .service:hover,
 .service:focus {
@@ -147,17 +164,18 @@ line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
 }*/
+.section {
+    padding: 93px 0;
+}
 .features-links {
     display: flex;
-    margin-top: 94px;
-    margin-bottom: 0;
+    
 }
-.features-links:last-child {
+.features-link:last-child {
     margin-right: 0;
 }
 .features-link {
     width: 270px;
-    height: 101px;
     margin-right: 30px;
 }
 .feature-idea {
@@ -175,56 +193,70 @@ letter-spacing: 0.03em;
     line-height: 1.71;
     letter-spacing: 0.03em;
 } 
-.container-photo {
-    width: 1170px;
+.photo {
+    padding-top: 0;
+   
     margin-left: auto;
     margin-right: auto;
-    margin-top: 94px;
 } 
 .imgs {
     text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.photo-item {
+    margin-right: 30px;
+}
+.photo-item:last-child {
+    margin-right: 0;
 }
 .photo-links {
     display: flex;
     margin-top: 50px;
 }
-.photo-link {
-    margin-right: 30px;
-}
 .team { 
-    height: 648px;
     background: #F5F4FA;
 }
-.container-team {
-    width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 94px;
-    background: #F5F4FA;
+.section .team  {
+    padding: 94px 0;
 }
+
 .our-team {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
     text-align: center;
-    padding-top: 94px;
-    
+    letter-spacing: 0.03em;
+    color: #212121;
+        
 }
 .team-links {
     display: flex;
-    margin-right: 30px;
-    margin-top: 50px;
-    margin-bottom: 94px;
+    
 }
 .team-link {
-    width: 270px;
-    height: 368px;
+    
     margin-right: 30px;
-    background-color: #FFFFFF;
+   
 }
-.team-photo {
-    width: 270px;
-    margin-right: 30px;
-}
-.team-photo:last-child {
+.team-link:last-child {
     margin-right: 0;
+}
+.team-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #FFFFFF;
 }
 .team-names {  
     color: var(--text-color-primary);
@@ -235,11 +267,10 @@ letter-spacing: 0.03em;
 }
 .team-names {
     text-align: center;
-    margin-top: 30px;
+    
 }
 .team-job {
     margin-top: 10px;
-
     color: var(--text-color-secondary);
     font-size: 16px;
     line-height: 1.18;
@@ -249,6 +280,9 @@ letter-spacing: 0.03em;
     display: block;
     margin-top: 94px;
 }
+.hidd {
+     visibility: hidden; 
+}
 .cares { 
     width: 611px;
     height: 54px;
@@ -257,13 +291,22 @@ letter-spacing: 0.03em;
     justify-content: center;
     align-items: center;
 }
+.cares-item {
+
+    margin-right: 8px;
+    margin-bottom: 50px; 
+}
+.cares-item:last-child {
+    margin-right: 0;
+    
+}
 .care { 
 
     color: var(--text-color-primary);
     background-color: #F5F4FA;
     cursor: pointer;
-    margin-right: 8px;
     border: transparent;
+    border-radius: 4px;
 
     font-weight: 500;
     font-size: 16px;
@@ -272,7 +315,6 @@ letter-spacing: 0.03em;
     letter-spacing: 0.03em;
 
 }
-
 .care:hover,
 .care:focus {
     color: #FFFFFF;
@@ -285,22 +327,15 @@ letter-spacing: 0.03em;
     display: flex;
     flex-wrap: wrap;
 }
-
-
-.product-item{
-    width: 370px;
-    height: 404px;
+.product-item {
     margin-bottom: 30px;
     margin-right: 30px;
-    box-sizing: border-box;
-    border: 1px solid #eeeeee;
-    
 }
 .product-link {
-   width: 322px;
-   height: 79px;
-   
-   margin-top: 20px;
+   padding: 20px 24px;
+   border-right: 1px solid #eeeeee;
+   border-bottom: 1px solid #eeeeee;
+   border-left: 1px solid #eeeeee;
 }
 .product-item:nth-child(3n) {
     margin-right: 0;
@@ -312,10 +347,6 @@ letter-spacing: 0.03em;
     width: 370px;
 }
 .product-name {
-    width: 322px;
-    height: 36px;
-    margin-top: 20px;
-    margin-left: 24px;
     color: #212121;
     font-weight: 700;
     font-size: 18px;
@@ -323,8 +354,8 @@ letter-spacing: 0.03em;
     letter-spacing: 0.06em;
 }
 .product-trait {
-    padding-top: 4px;
-    margin-left: 24px;
+    margin-top: 4px;
+    
     color: var(--text-color-secondary);
     font-size: 16px;
     line-height: 1.88;
@@ -332,21 +363,20 @@ letter-spacing: 0.03em;
 }
 .footer { 
     display: block;
-    width: 1600px;
-    height: 252px;
     background-color: #2F303A;
     padding-top: 60px;
+    padding-bottom: 60px;
 
 }
 .footer-logo { 
-    margin-left: 215px;
-
+    
     font-family: Raleway, sans-serif;
     color:  #FFFFFF;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    background-color: #2F303A;
 
 }
 .wb {
@@ -388,11 +418,10 @@ letter-spacing: 0.03em;
     letter-spacing: 0.03em;
 }
 .blok-addrs {
-    width: 231px;
-    height: 81px;
+    
     display: block;
-    margin-left: 215px;
-    margin-bottom: 60px;  
+    background-color: #2F303A;
+    
 }
 .address:hover,
 .address:focus   {
